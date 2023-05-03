@@ -19,8 +19,6 @@
                 <h1>LISTA - STATUS</h1>
         </div>
 <div class="container">
-
-        
         <div id="container"></div>
         <div id="container1"></div>
         <div id="container2"></div>

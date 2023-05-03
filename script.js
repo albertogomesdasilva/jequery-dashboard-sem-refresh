@@ -23,12 +23,13 @@
 
 
           for (var i = 0; i < frase.length; i++) {
+              var novaDiv = $("<div></div>");
 
 
               if(frase[i].Status == 1) {
-
-                  var novaDiv = $("<div></div>");
-                  novaDiv.addClass("item");
+                  
+                //   var novaDiv = $("<div></div>");
+                  novaDiv.addClass("flex");
                   novaDiv.attr("id", "container1");
                   novaDiv.append("<h2>STATUS: " + frase[i].Status + "</h2>")
                   novaDiv.append("<h3>ID: " + frase[i].Id + "</h2>");
@@ -39,20 +40,20 @@
                 }else if  (frase[i].Status == 2) {
 
 
-                     var novaDiv = $("<div></div>");
-                     novaDiv.addClass("item");
+                    //  var novaDiv = $("<div></div>");
+                     novaDiv.addClass("flex");
                      novaDiv.attr("id", "container2");
                      novaDiv.append("<h2>STATUS: " + frase[i].Status + "</h2>");
                      novaDiv.append("<h3>ID: " + frase[i].Id + "</h2>");
-                        novaDiv.append("<p>MENSAGEM: " + frase[i].Mensagem + "</p>");
-                        novaDiv.append("<hr>");
-                        $("#container2").append(novaDiv);
+                     novaDiv.append("<p>MENSAGEM: " + frase[i].Mensagem + "</p>");
+                     novaDiv.append("<hr>");
+                     $("#container2").append(novaDiv);
 
                     }else if  (frase[i].Status == 3 ) {
 
 
-                        var novaDiv = $("<div></div>");
-                        novaDiv.addClass("item");
+                        // var novaDiv = $("<div></div>");
+                        novaDiv.addClass("flex");
                         novaDiv.attr("id", "container3");
                         novaDiv.append("<h2>STATUS: " + frase[i].Status + "</h2>");
                         novaDiv.append("<h3>ID: " + frase[i].Id + "</h2>");
@@ -63,8 +64,8 @@
                     }else if  (frase[i].Status == 4) {
 
 
-                        var novaDiv = $("<div></div>");
-                        novaDiv.addClass("item");
+                        // var novaDiv = $("<div></div>");
+                        novaDiv.addClass("flex");
                         novaDiv.attr("id", "container4");
                         novaDiv.append("<h2>STATUS: " + frase[i].Status + "</h2>");
                         novaDiv.append("<h3>ID: " + frase[i].Id + "</h2>");

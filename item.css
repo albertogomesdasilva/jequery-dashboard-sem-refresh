@@ -1,20 +1,21 @@
 .item {
     display: block;
     color: red;
-    width: 300px;
+    width: 250px;
     height: 150px;
     margin: 15px;
     background-color: rgb(99, 139, 213);
-    border-radius: 5px;
 }
 
 .container {
     
     color: red;
     display: flex;
+    margin-block: 20px;
 }
 
 #container1 {
+    border-radius: 10px;
     color: #fff;
     margin: 15px;
     background-color: red;
@@ -22,18 +23,21 @@
 }
 
 #container2 {
+    border-radius: 10px;
     color: #fff;
     margin: 15px;
     background-color: blue;
 }
 
 #container3 {
+    border-radius: 10px;
     color: #fff;
     margin: 15px;
     background-color: orange;
 }
 
 #container4 {
+    border-radius: 10px;
     color: #fff;
     margin: 15px;
     background-color: green;
