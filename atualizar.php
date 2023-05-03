@@ -12,7 +12,7 @@ try {
     echo 'Erro de conexão: ' . $e->getMessage();
   }
 // Incluindo arquivo de conexão
-//require_once('../config/conn.php');
+require_once('./conn.php');
 // Selecionando uma frase aleatória
 $stmt = $conn->prepare('SELECT * FROM tblmensagens');
 
