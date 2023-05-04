@@ -7,7 +7,7 @@
           //  console.log(frase[0].Peso);
           // LIMPA TODA A TELA ANTES DE ATUALIZAR
 
-          console.log(frase)
+        //  console.log(frase)
 
 
 
@@ -18,14 +18,47 @@
           $('#container3').empty();
 
           $('#container4').empty();
+          
+          
+          $('#container').empty();
 
 
-
-
+          var divTitulo = $("<div></div>");
+          var divTitulo2 = $("<div></div>");
+          var divTitulo3 = $("<div></div>");
+          var divTitulo4 = $("<div></div>");
+          
+          divTitulo.addClass("flex");
+          divTitulo.attr("id", "container1");
+          divTitulo.append("<h2>ESFRIANDO</h2>");
+          divTitulo.append("<hr>");
+          $("#container1").append(divTitulo);
+       
+          divTitulo2.addClass("flex");
+          divTitulo2.attr("id", "container2");
+          divTitulo2.append("<h2>BOBINANDO</h2>");
+          divTitulo2.append("<hr>");
+          $("#container2").append(divTitulo2);
+          
+          divTitulo3.addClass("flex");
+          divTitulo3.attr("id", "container3");
+          divTitulo3.append("<h2>EMBALANDO</h2>");
+          divTitulo3.append("<hr>");
+          $("#container3").append(divTitulo3);
+          
+          divTitulo4.addClass("flex");
+          divTitulo4.attr("id", "container4");
+          divTitulo4.append("<h2>BOBINANDO</h2>");
+          divTitulo4.append("<hr>");
+          $("#container4").append(divTitulo4);
+          
+          
           for (var i = 0; i < frase.length; i++) {
-              var novaDiv = $("<div></div>");
-
-
+            
+            var novaDiv = $("<div></div>");
+            
+            
+            
               if(frase[i].Status == 1) {
                   
                 //   var novaDiv = $("<div></div>");
@@ -39,8 +72,11 @@
                   novaDiv.append("<button class='btn btn-info'><a href='alterar+.php"+'?id='+ frase[i].Id + "'> ->  </a></button>");
                   novaDiv.append("<hr>");
                   $("#container1").append(novaDiv);
+                  
+                }
 
-                }else if  (frase[i].Status == 2) {
+                
+                if  (frase[i].Status == 2) {
 
 
                     //  var novaDiv = $("<div></div>");
@@ -56,7 +92,9 @@
                      novaDiv.append("<hr>");
                      $("#container2").append(novaDiv);
 
-                    }else if  (frase[i].Status == 3 ) {
+                    }
+                    
+                if  (frase[i].Status == 3 ) {
 
 
                         // var novaDiv = $("<div></div>");
@@ -71,7 +109,9 @@
                         novaDiv.append("<hr>");
                         $("#container3").append(novaDiv);
                         
-                    }else if  (frase[i].Status == 4) {
+                    }
+                
+                    if  (frase[i].Status == 4) {
                         
                         
                         // var novaDiv = $("<div></div>");
@@ -86,8 +126,6 @@
                         novaDiv.append("<hr>");
                         $("#container4").append(novaDiv);
                     }
-                    
-                    
                 }
 
 

@@ -18,29 +18,29 @@
 
                 <h1>LISTA - STATUS</h1>
         </div>
-        <div class="container">
-                <div id="container">
-                        
-                        </div>
+                <div class="container">
+                        <div id="container">             </div>
 
+                <div>
 
-<div>
-
-        <div id="container1">
-               
-        </div>
-</div>
-<div>
-        <div id="container2"></div>
-</div>
-<div>
-        <div id="container3"></div>
-</div>
-<div>
-        <div id="container4"></div>
-</div>
+                        <div id="container1">     </div>
+                </div>
+                
+                <div>
+                        <div id="container2"></div>
+                </div>
+                
+                <div>
+                        <div id="container3"></div>
+                </div>
+                
+                <div>
+                        <div id="container4"></div>
+                </div>
 
         </div>
+
+
 <?php
 require_once('./atualizar.php');
 

@@ -12,7 +12,8 @@
 //     echo 'Erro de conexão: ' . $e->getMessage();
 //   }
 // Incluindo arquivo de conexão
-require_once('./conn.php');
+// require_once('./conn.php');
+require('./conn.php');
 // Selecionando uma frase aleatória
 $stmt = $conn->prepare('SELECT * FROM tblmensagens');
 
@@ -29,9 +30,9 @@ if ($stmt->execute())
    /****************************************** */
    
     // Retornando frase em formato JSON
-     
-   
-     echo json_encode($frase);
+
+
+    echo json_encode($frase);
     
 
 
