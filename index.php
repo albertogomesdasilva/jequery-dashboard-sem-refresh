@@ -42,7 +42,7 @@
 
         </div>
 <?php
-require_once('./Atualizar.php');
+require_once('./atualizar.php');
 
 
 
