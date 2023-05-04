@@ -1,5 +1,9 @@
 Alberto Gomes da Silva
 
+177.153.50.224/jquery
+
+data/www/pingcrm/public/jquery
+
 INDEX.HTML
 ---------------------------------
 <!DOCTYPE html>
