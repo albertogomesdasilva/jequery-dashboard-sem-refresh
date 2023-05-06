@@ -1,3 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quadrados Responsivos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
+
+CSS
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .box {
+    width: calc(25% - 10px);
+    height: 100px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box {
+      width: calc(50% - 10px);
+    }
+  }
+
+
+
 Alberto Gomes da Silva
 
 177.153.50.224/jquery
